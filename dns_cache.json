@@ -1,0 +1,18 @@
+{
+  "dns_cache":
+  {
+    "example.com":
+    {
+      "ttl": 1622548800,
+      "response": "..."
+    }
+  },
+  "reverse_dns_cache":
+  {
+    "93.184.216.34":
+    {
+      "ttl": 1622548800,
+      "response": "..."
+    }
+  }
+}
