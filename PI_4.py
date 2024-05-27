@@ -105,6 +105,7 @@ def cache_cleanup():
     while True:
         current_time = time.time()
         with LOCK:
+            global dns_cache, reverse_dns_cache
             dns_cache = {k: v for k, v in dns_cache.items() if v["ttl"] > current_time}
             reverse_dns_cache = {k: v for k, v in reverse_dns_cache.items() if v["ttl"] > current_time}
             save_cache()
